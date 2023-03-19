@@ -41,3 +41,34 @@ iframe#phone{
     height:468px;
     background-size: cover;
 }
+div#links img {
+    background: white;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+div#links{
+    display: flex;
+    flex-direction: column; /*alternativamente podemos usar <br> no fim de cada link para alinhar os icones vericalmente*/
+    align-items: end;
+}
+
+div#links img:hover{
+    border: 2px solid white;
+    animation: botonmove 0.4s;
+}
+
+@keyframes botonmove {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-20px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(18px);
+    }
+}
